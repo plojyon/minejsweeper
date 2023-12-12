@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <script src="game.js"></script>
+    <style>
+        .cell {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .open {
+            background-color: #ccc;
+            cursor: default;
+        }
+
+        .open.bomb {
+            background-color: #f00;
+        }
+
+        /* .bomb {
+            background-color: aqua;
+        } */
+
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minesweeper</h1>
+    <div id="game"></div>
+    <div id="presets" style="display:none">
+        <a href="?width=9&height=9&bombs=10">Beginner</a>
+        <a href="?width=16&height=16&bombs=40">Intermediate</a>
+        <a href="?width=30&height=16&bombs=99">Expert</a>
+    </div>
+</body>
+
+</html>
